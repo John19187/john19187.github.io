@@ -12,23 +12,13 @@ css: ['index.css', 'sidebar-popular-repo.css']
                 {{ site.location }}
             </span>
             <span class="meta-info hvr-grow">
-                <a href="https://blog.csdn.net/qq_34967770" target="_blank">CSDN</a>
+                <span class="octicon octicon-organization"></span>
+                <a href="https://good.john1959.com/lepl/2024" target="_blank">超性价比👉高端稳定机场</a>
             </span>
-            <span class="meta-info hvr-grow">
-                <a href="https://www.jianshu.com/u/58ae7d436519" target="_blank">简书</a>
-            </span>
-            <!--
             <span class="meta-info hvr-grow">
                 <span class="octicon octicon-organization"></span>
-                <a href="{{ site.company_url }}" target="_blank">{{ site.company }}</a>
+                <a href="https://good.john1959.com/cheap/2024" target="_blank">好用便宜机场</a>
             </span>
-            -->
-            <!--
-            <span class="meta-info hvr-grow">
-                <span class="octicon octicon-mark-github"></span>
-                <a href="{{ site.github_url }}" target="_blank">@{{ site.name }}</a>
-            </span>
-            -->
         </div>
     </div>
 </section>
@@ -43,7 +33,7 @@ css: ['index.css', 'sidebar-popular-repo.css']
                 {% for post in paginator.posts %}
                 <li class="post-list-item">
                     <h2 class="post-list-title">
-                        <a class="hvr-underline-from-center" href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+                        <a class="hvr-underline-from-center" href="{{ site.url }}{{ post.url }}"  target="_blank">{{ post.title }}</a>
                     </h2>
                     <p class="post-list-description">
                         {{ post.excerpt | strip_html | strip }}
@@ -58,8 +48,6 @@ css: ['index.css', 'sidebar-popular-repo.css']
             <!-- Pagination -->
             {% include pagination.html %}
 
-            <!-- Comments -->
-            {% include disqus-comments.html %}
 
         </div>
 
