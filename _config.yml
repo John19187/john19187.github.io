@@ -7,16 +7,14 @@
 
 # Site settings
 title: 千里之行，始于足下
-name: 随风飘雁的博客
-email: 952409683@qq.com
-location: 西安
+name: John博客
+keywords: 绿色软件,免费软件,软件博客,便携软件,电脑软件,资源分享,免费教程
 company:
 company_url:
-github_url: https://github.com/zhoumei
-description: This is Zhou Mei’s technical blog
+description: John博客提供实用的免费教程，专注网络知识分享
 favicon: favicon.png # Image must be in assets/images
 
-url: https://zhoumei.github.io/ # the base hostname & protocol for your site
+url: https://john19187.github.io # the base hostname & protocol for your site
 
 ## Gem
 gems:
@@ -25,6 +23,7 @@ gems:
   - rouge
   - kramdown
   - jekyll-github-metadata
+  - jekyll-sitemap
 
 # Build settings
 markdown: kramdown
@@ -43,7 +42,7 @@ kramdown:
   enable_coderay: true
 
 # Disque
-# disque: httpzhoumeigithubio.disqus.com
+disque: httpdongchuangithubio.disqus.com
 
 # Pagination
 paginate: 10
@@ -71,38 +70,18 @@ navs:
     href: /about
     label: About
 
-# featured articles
-featured_articles:
-  -
-    href: /2020/11/25/jekyll.html
-    category: jekyll
-    name: 使用Jekyll搭建免费的个人博客详细教程
-    description: 照着做就可以搭建一个免费的个人博客
-
-  -
-    href: /2020/11/16/markdown.html
-    category: markdown
-    name: 写作排版利器Markdown语法
-    description: Markdown语法汇总，很全很详细！
-
-  -
-    href: /2020/06/13/git.html
-    category: git
-    name: Git教程(2020版)
-    description: Git入门，快速上手
-
 # Sidebar to show popular repo
 side_bar_repo_limit: 5 # Number of repos to show
 
 # Google Analytics
-#analytics :
-#   provider : google
-#   google :
-#       tracking_id : 'UA-72165600-1'
+analytics :
+  provider : google
+  google :
+      tracking_id : 'UA-72165609-1'
 
 
 # For about.html. Fell free to create your own!
-skill_software_keywords: [Java, MySQL, Oracle, Redis]
-skill_j2ee_keywords: [Spring Boot, Hibernet, MyBatis, Spring Data JPA, Elasticsearch]
-skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax]
-skill_mobile_app_keywords: []
+skill_software_keywords: [Java, C, C++, Qt, Python, MySQL, Oracle, SQLite, PL/SQL, Design Patterns]
+skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
+skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, AngularJS, NodeJS, ExpressJS, MongoDB, Redis, PHP, Symfony, Boostrap]
+skill_mobile_app_keywords: [Android, Sketch UI Desgin]
