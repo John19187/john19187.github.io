@@ -18,10 +18,16 @@ menu: Bookmark
 - [Leetcode算法](http://www.leetcodecn.com/) -基础算法, 经典排序
 
 # Blog
-- [纯洁的微笑的博客](http://www.ityouknow.com/) - Spring Boot, Spring Cloud, Java, Python
-- [方志朋的专栏](https://www.fangzhipeng.com/) - Spring Boot, Spring Cloud, Java
-- [廖雪峰的官方网站](https://www.liaoxuefeng.com/) - Java, Python, JavaScript, 区块链, SQL, Git
-- [阮一峰的网络日志](http://www.ruanyifeng.com/blog/) - 微信小程序, 科技周刊
+- [稳定SSR机场节点](https://www.ssrnodes.com/)
+- [天空节点](https://www.skynode1.com/) 
+- [节点机场推荐](https://www.nodegood.com/)
+- [Clash机场指南](https://www.clashgoodnode.com/)
+- [Shadowrocket机场订阅](https://shadowrocketnodes.com/) 
+- [小火箭机场及ID](https://www.shadowrocketid.com/) 
+- [V2ray机场节点](https://v2raygoodnode.com/) 
+- [IOS小火箭机场账号](https://ios-shadowrocket.com/)
+- [免费机场节点](https://www.freejichang.com/)
+- [免费SSR节点](https://ssrtop.com/)
 
 # Open source
 - [JEECMS](http://www.jeecms.com/) - 开源网站框架
