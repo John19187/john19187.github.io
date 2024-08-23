@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /*.ico$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.gif$
+Allow: /*.webp$
+Allow: /_posts/
+Disallow: /_layouts/
+Disallow: /assets/
+Disallow: /_includes/
+Disallow: .idea/
+Disallow: /feed
+Disallow: /rss
+Disallow: /clash@a/
+Disallow: /clash@b/
+Disallow: /clash@c/
+Disallow: /@clash@d/
+Disallow: /v2ray@a/
+Disallow: /v2ray@b/
+Disallow: /base64/
+Disallow: /sing-box/
+Disallow: /.github/
+
+Sitemap: https://john1959.com/sitemap.xml
