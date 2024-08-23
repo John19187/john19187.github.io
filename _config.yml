@@ -55,16 +55,8 @@ navs:
     label: Home
 
   -
-    href: /open-source
-    label: Open-Source
-
-  -
     href: /blog
     label: Blog
-
-  -
-    href: /bookmark
-    label: Bookmark
 
   -
     href: /about
@@ -77,7 +69,7 @@ side_bar_repo_limit: 5 # Number of repos to show
 analytics :
   provider : google
   google :
-      tracking_id : 'UA-72165609-1'
+      tracking_id : 'UA-721656099-1'
 
 
 # For about.html. Fell free to create your own!
