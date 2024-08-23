@@ -28,3 +28,14 @@
 .col-md-4 {
     position: static; /* fix strange behavior */
 }
+
+.h2, .h3, h2, h3 {
+    font-size: 1.2em;
+    border-left: 6px solid #ced5dd;
+    font-weight: 300;
+    padding: 5px 15px;
+    overflow: hidden;
+    margin: 18px 0 18px;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+}
