@@ -5,9 +5,18 @@
 
     <!-- Favicon Icon -->
     <link rel="shortcut icon" type="image/x-icon" href="/assets/images/{{ site.favicon }}">
-   <title>{% if page.title %}{{ page.title | remove_first: "John博客 - " | escape }}{% else %}{{ site.name | escape }}{% endif %}</title>
-   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  {% if page.tags and page.tags.size > 0 %}<meta name="keywords" content="{{ page.tags | join: ', ' | escape }}">{% endif %}
+
+    <!-- 判断是否为 /blog/ 页面 -->
+    {% if page.url contains "/blog/" %}
+        <title>每日节点更新</title>
+        <meta name="description" content="每日更新ssr/clash/v2ray/base64/sing-box的节点订阅链接">
+    {% else %}
+        <title>{% if page.title %}{{ page.title | remove_first: "John博客 - " | escape }}{% else %}{{ site.name | escape }}{% endif %}</title>
+        <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    {% endif %}
+    <!-- 判断是否为 /blog/ 页面 结束 -->
+
+    {% if page.tags and page.tags.size > 0 %}<meta name="keywords" content="{{ page.tags | join: ', ' | escape }}">{% endif %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 
