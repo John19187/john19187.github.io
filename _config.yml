@@ -14,7 +14,7 @@ company_url:
 description: John博客提供实用的免费教程，专注网络知识分享
 favicon: favicon.png # Image must be in assets/images
 
-url: https://john19187.github.io # the base hostname & protocol for your site
+url: https://www.john1959.com # the base hostname & protocol for your site
 
 ## Gem
 gems:
