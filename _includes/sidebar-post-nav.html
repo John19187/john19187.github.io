@@ -11,11 +11,11 @@
 
     $(document).ready(function(){
 
-        // 判断是不是手机端访问
-        let mobile_flag = isMobile(); // false为PC端，true为手机端
-        if(mobile_flag){
-            return;
-        }
+        // 注释掉或移除判断是否为手机端访问的代码，以便目录始终显示
+        // let mobile_flag = isMobile(); // false为PC端，true为手机端
+        // if(mobile_flag){
+        //     return;
+        // }
 
         // 处理 h1, h2 和 h3 标签
         $("article h1, article h2, article h3").each(function(index) {
@@ -70,31 +70,28 @@
         });
     });
 
-    /**
-     * 判断访问类型是电脑还是手机
-     * false为PC端，true为手机端
-     */
-    function isMobile() {
-        var userAgentInfo = navigator.userAgent;
-        var mobileAgents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
-        var mobile_flag = false;
+    // 注释掉判断设备类型的函数
+    // function isMobile() {
+    //     var userAgentInfo = navigator.userAgent;
+    //     var mobileAgents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
+    //     var mobile_flag = false;
 
-        for (var v = 0; v < mobileAgents.length; v++) {
-            if (userAgentInfo.indexOf(mobileAgents[v]) > 0) {
-                mobile_flag = true;
-                break;
-            }
-        }
+    //     for (var v = 0; v < mobileAgents.length; v++) {
+    //         if (userAgentInfo.indexOf(mobileAgents[v]) > 0) {
+    //             mobile_flag = true;
+    //             break;
+    //         }
+    //     }
 
-        var screen_width = window.screen.width;
-        var screen_height = window.screen.height;
+    //     var screen_width = window.screen.width;
+    //     var screen_height = window.screen.height;
 
-        if(screen_width < 500 && screen_height < 800){
-            mobile_flag = true;
-        }
+    //     if(screen_width < 500 && screen_height < 800){
+    //         mobile_flag = true;
+    //     }
 
-        return mobile_flag;
-    }
+    //     return mobile_flag;
+    // }
 
 </script>
 
