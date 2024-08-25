@@ -11,17 +11,23 @@
 
     $(document).ready(function(){
 
-        //判断是不是手机端访问
-        //手机端访问，不需要文章目录
+        // 判断是不是手机端访问
         let mobile_flag = isMobile(); // false为PC端，true为手机端
         if(mobile_flag){
             return;
         }
 
         // 处理 h1, h2 和 h3 标签
-        $( "article h1, article h2, article h3" ).each(function( index ) {
+        $("article h1, article h2, article h3").each(function(index) {
             let tagName = $(this).prop("tagName").toLowerCase();
             let indent = "";
+            let text = $(this).text().trim();
+
+            // 跳过生成 undefined 或者空白链接的逻辑
+            if (!text || text === "Post Directory" || text === "近日文章") {
+                return;
+            }
+
             if(tagName === "h2") {
                 indent = "&nbsp;&nbsp;- ";
             } else if(tagName === "h3") {
@@ -29,41 +35,38 @@
             }
 
             $(".post-directory dl").append("<dt><a class=\"jumper\" href=#" +
-                    $(this).attr("id")
-                    + ">"
-                    + indent + $(this).text()
-                    + "</a></dt>");
+                $(this).attr("id") +
+                ">" +
+                indent + text +
+                "</a></dt>");
         });
 
-        var fixmeTop = $('#post-directory-module').offset().top - 100;       // get initial position of the element
+        // 固定目录位置的逻辑
+        var fixmeTop = $('#post-directory-module').offset().top - 100;
 
-        $(window).scroll(function() {                  // assign scroll event listener
+        $(window).scroll(function() {
+            var currentScroll = $(window).scrollTop();
 
-            var currentScroll = $(window).scrollTop(); // get current position
-
-            if (currentScroll >= fixmeTop) {           // apply position: fixed if you
-                $('#post-directory-module').css({      // scroll to that element or below it
+            if (currentScroll >= fixmeTop) {
+                $('#post-directory-module').css({
                     top: '100px',
                     position: 'fixed',
                     width: 'inherit'
                 });
-            } else {                                   // apply position: static
-                $('#post-directory-module').css({      // if you scroll above it
+            } else {
+                $('#post-directory-module').css({
                     position: 'inherit',
                     width: 'inherit'
                 });
             }
-
         });
 
-        $("a.jumper").on("click", function( e ) {
-
+        // 跳转链接的动画效果
+        $("a.jumper").on("click", function(e) {
             e.preventDefault();
-
             $("body, html").animate({
                 scrollTop: ($( $(this).attr('href') ).offset().top - 100)
             }, 600);
-
         });
     });
 
@@ -73,12 +76,9 @@
      */
     function isMobile() {
         var userAgentInfo = navigator.userAgent;
-
-        var mobileAgents = [ "Android", "iPhone", "SymbianOS", "Windows Phone", "iPad","iPod"];
-
+        var mobileAgents = ["Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod"];
         var mobile_flag = false;
 
-        //根据userAgent判断是否是手机
         for (var v = 0; v < mobileAgents.length; v++) {
             if (userAgentInfo.indexOf(mobileAgents[v]) > 0) {
                 mobile_flag = true;
@@ -89,7 +89,6 @@
         var screen_width = window.screen.width;
         var screen_height = window.screen.height;
 
-        //根据屏幕分辨率判断是否是手机
         if(screen_width < 500 && screen_height < 800){
             mobile_flag = true;
         }
@@ -98,3 +97,4 @@
     }
 
 </script>
+
