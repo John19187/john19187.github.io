@@ -20,5 +20,7 @@ Disallow: /v2ray@b/
 Disallow: /base64/
 Disallow: /sing-box/
 Disallow: /.github/
+Disallow: /bower_components/
+
 
 Sitemap: https://john1959.com/sitemap.xml
