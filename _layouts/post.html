@@ -9,26 +9,35 @@ css: ['sidebar-post-nav.css']
 
         {% if page.no-post-nav %}
         <div class="col-md-12 markdown-body">
-
             {{ content }}
-</br>{% include post-tag.html %}</br>
+            </br>{% include post-tag.html %}</br>
         </div>
 
-
-	    
         {% else %}
         <div class="col-md-8 markdown-body">
-
             {{ content }}
-</br>{% include post-tag.html %}</br>
+            </br>{% include post-tag.html %}</br>
         </div>
 
-
         <div class="col-md-4">
+            <!-- 侧边栏目录板块 -->
             {% include sidebar-post-nav.html %}
+
+            <!-- 近日文章板块 -->
+            <div class="recent-posts mt-4">
+                <h3>近日文章</h3>
+                <ul class="list-unstyled">
+                    {% for post in site.posts limit:5 %}
+                        <li class="recent-post-item">
+                            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
         </div>
         {% endif %}
 
     </div>
 
 </article>
+
