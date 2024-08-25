@@ -217,3 +217,20 @@
     background-color: #f6f6f6;
     border-radius: 5px;
 }
+.recent-posts {
+    margin-top: 15px; /* 上下与其他板块的间隙 */
+}
+
+.recent-post-item {
+    padding: 3px 0; /* 调整上下行之间的间隙，使其紧凑 */
+}
+
+.recent-post-item a {
+    color: #333; /* 链接颜色 */
+    text-decoration: none; /* 去除下划线 */
+}
+
+.recent-post-item a:hover {
+    color: #333; /* 悬停时保持相同颜色 */
+    text-decoration: none; /* 悬停时去除下划线 */
+}
