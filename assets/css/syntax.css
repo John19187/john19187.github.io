@@ -235,5 +235,5 @@
 .good.cat1{background-image:url(/assets/images/lepl.png)}
 .good.cat2{background-image:url(/assets/images/cheap.png)}
 .good p{font-size:1em;color:#261e1ed1}
-.good a{color:#ff007a;margin:0 10px}
+.good a{font-weight: bold;color:#ff007a;margin:0 10px}
 .good a:hover{text-decoration:underline}
