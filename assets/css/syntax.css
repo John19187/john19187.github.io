@@ -232,7 +232,7 @@
     text-decoration: none; /* 悬停时去除下划线 */
 }
 .good{background-color:#8ee7e8b5;padding:60px 20px 20px 20px;border-radius:10px;text-align:left;font-family:Arial,sans-serif;margin-top:.8em;margin-bottom:.8em;background-repeat:no-repeat;background-position:top center;background-size:50px 50px}
-.good.cat1{background-image:url(/assets/images/good.png)}
+.good.cat1{background-image:url(/assets/images/lepl.png)}
 .good.cat2{background-image:url(/assets/images/cheap.png)}
 .good p{font-size:1em;color:#261e1ed1}
 .good a{color:#ff007a;margin:0 10px}
