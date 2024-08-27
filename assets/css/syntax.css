@@ -220,17 +220,20 @@
 .recent-posts {
     margin-top: 15px; /* 上下与其他板块的间隙 */
 }
-
 .recent-post-item {
-    padding: 3px 0; /* 调整上下行之间的间隙，使其紧凑 */
+    padding: 3px 0; /* 上下行紧凑 */
 }
-
 .recent-post-item a {
     color: #333; /* 链接颜色 */
-    text-decoration: none; /* 去除下划线 */
+    text-decoration: none;
 }
-
 .recent-post-item a:hover {
-    color: #333; /* 悬停时保持相同颜色 */
+    color: #333; /
     text-decoration: none; /* 悬停时去除下划线 */
 }
+.good{background-color:#8ee7e8b5;padding:60px 20px 20px 20px;border-radius:10px;text-align:left;font-family:Arial,sans-serif;margin-top:.8em;margin-bottom:.8em;background-repeat:no-repeat;background-position:top center;background-size:50px 50px}
+.good.cat1{background-image:url(/assets/images/good.png)}
+.good.cat2{background-image:url(/assets/images/cheap.png)}
+.good p{font-size:1em;color:#261e1ed1}
+.good a{color:#ff007a;margin:0 10px}
+.good a:hover{text-decoration:underline}
