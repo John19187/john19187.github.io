@@ -3,7 +3,7 @@ layout: post
 title: 2024年10月09日：好用日本（都留市）v2ray-shadowrocket机场推荐和日本（赤碕温泉）-英国（北伦敦）v2ray节点
 description:  2024年10月09日John博客一共更新87个好用免费节点，包含日本（赤碕温泉）-英国（北伦敦）等地区，测速最高25.65MB/S， 有效时间24小时，过期请重新获取。本站将每日持续更新好用免费节点，旨在为您提供全方位的网络保护和畅快的上网体验
 tags: [日本（赤碕温泉）-英国（北伦敦）v2ray-shadowrocket节点 2024年10月09日, 日本（都留市）好用v2ray-shadowrocket机场推荐 2024年10月09日]
-permalink: posts/2024-10-9-v2ray-shadowrocket-free-node.html
+permalink: posts/2024-10-09-v2ray-shadowrocket-free-node.html
 
 ---
 
